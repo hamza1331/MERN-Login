@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "MERN stack project",
   "author": "Hamza",
-  "license": "MIT",
   "scripts": {
     "start": "webpack -p --progress --profile --colors && node server",
     "start:dev": "node server"
