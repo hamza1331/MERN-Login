@@ -18,12 +18,10 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/counters')
+    fetch('/api/accounts/verify/5b8e193a6e78b016e40cf6d8')
       .then(res => res.json())
       .then(json => {
-        this.setState({
-          counters: json
-        });
+        console.log(json)
       });
   }
 
