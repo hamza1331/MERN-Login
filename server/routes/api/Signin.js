@@ -74,7 +74,8 @@ module.exports = (app) => {
   })
   app.get('/api/accounts/verify/:token',(req,res)=>{
     const {token} = req.params
-    UserSession.findById(token,(err,session)=>{
+    console.log(token)
+    UserSession.findOne({userId:token},(err,session)=>{
         if(err){
             return res.send({success:false,message:"Internal Server Error"})
         }
